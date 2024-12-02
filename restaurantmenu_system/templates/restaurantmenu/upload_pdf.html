@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Menu PDF</title>
+</head>
+<body>
+    <h1>Upload Menu PDF</h1>
+    <form action="/restaurantmenu/upload-pdf/" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Upload and Process</button>
+    </form>
+</body>
+</html>
